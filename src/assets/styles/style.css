@@ -1,3 +1,7 @@
+:root {
+    --text-color: #1F3F68;
+}
+
 @import "./global.css";
 @import "./fonts.css";
 @import "./utils.css";
@@ -9,3 +13,134 @@
 .test {
     color: red !important;
 }
+
+
+
+/* ------------------general----------------------- */
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--text-color);
+}
+
+.heading {
+    font-size: 36px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text-color);
+}
+
+/* ---------------------header---------------------- */
+
+.header__nav {
+    background: transparent;
+}
+
+.header__nav--list {
+    list-style-type: none;
+    display: flex;
+}
+
+.header__nav--item {
+    display: flex;
+    background: #6fbd9f;
+    padding: 10px 30px;
+    font-weight: 700;
+    border-radius: 5px 25px 25px 5px; 
+    margin-left: -20px;
+    background: linear-gradient(#ffffff 0%, #80cbc4 50%, #4db6ac 100%);
+    box-shadow: 6px 0 4px -1px rgba(0,0,0,0.4);
+}
+.header__nav--item:first-child {
+    z-index: 4;
+}
+.header__nav--item:nth-child(2) {
+    z-index: 3;
+}
+.header__nav--item:nth-child(3) {
+    z-index: 2;
+}
+.header__nav--item:last-child {
+    z-index: 1;
+}
+
+
+.header__nav--item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 10px;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* ---------------------index.html------------------ */
+
+.title {
+    font-size: 64px;
+    color: var(--text-color);
+}
+
+
+
+/* --------------------contact.html----------------- */
+
+.contact-title {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.form {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 30px;
+    background: url(../img/form-bg.jpg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.form-button {
+    font-family: sans-serif;
+    background: linear-gradient(90deg, #5ca9ec, #6836aa);
+    box-shadow: 5px 20px 50px rgba(16, 112, 117, 0.2);
+    padding: 10px 0;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-button:hover {
+    opacity: .9;
+}
+
+
+

@@ -4,58 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Конктакты</title>
+    <link rel="stylesheet" href="src/assets/styles/style.css">
 </head>
 <body>
     <header>
         <img src="src/assets/img/logo.png" alt="Логотип">
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contact.html">Контакты</a></li>
+        <nav class="header__nav">
+            <ul class="header__nav--list">
+                <li class="header__nav--item"><a href="index.html">Главная</a></li>
+                <li class="header__nav--item"><a href="contact.html">Контакты</a></li>
+                <li class="header__nav--item"><a href="#">Три</a></li>
+                <li class="header__nav--item"><a href="#">Четыре</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Contact Us</h2>
-        <p>Связь</p>
+        <h2 class="contact-title">Contact Us</h2>
+        <p class="text">Связь</p>
 
         <img src="src/assets/img/300px.jpg" alt="картинка" width="100px">
 
-        <h4>Address</h4>
-        <p>Адрес</p>
+        <h4 class="subtitle">Address</h4>
+        <p class="text">Адрес</p>
 
-        <h4>Phone</h4>
+        <h4 class="subtitle">Phone</h4>
         <ul>
             <li>89999999999</li>
             <li>89997777777</li>
         </ul>
 
-        <h4>Online Services</h4>
+        <h4 class="subtitle">Online Services</h4>
         <ul>
             <li>test.ru</li>
             <li>test@mail.ru</li>
         </ul>
-        <p>ул. Республики 1, 89999559559</p>
+        <p class="text">ул. Республики 1, 89999559559</p>
 
-        <h4>Send us message</h4>
-        <form>
+        <h4 class="subtitle">Send us message</h4>
+        <form class="form">
             <label>Full name</label>
-            <input type="text">
+            <input class="form-input" type="text">
             
             <label>Email</label>
-            <input type="email">
+            <input class="form-input" type="email">
 
             <label>Message</label>
-            <textarea></textarea>
+            <textarea class="form-input"></textarea>
 
-            <button>Submit</button>
+            <button class="form-button">Submit</button>
         </form>
     </main>
 
     <footer>
-        <h3>Далеко-далеко, за словесными.</h3>
-        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут.</p>
+        <h3 class="heading">Далеко-далеко, за словесными.</h3>
+        <p class="text">Далеко-далеко за словесными горами в стране гласных и согласных живут.</p>
 
         <hr>
 
@@ -64,7 +67,7 @@
             <li>89526448484</li>
             <li>test@mail.ru</li>
         </ul>
-        <p>Все права защищены.</p>
+        <p class="text">Все права защищены.</p>
     </footer>
 </body>
 </html>
